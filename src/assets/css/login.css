@@ -1,0 +1,226 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 70px 0 90px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-card h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0084ff;
+}
+
+.login-card p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #333;
+}
+
+.login-form .input-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.login-button:hover {
+    color: #ffffff;
+    background-color: #001e32;
+    box-shadow: #0084ff 0px 5px 15px;
+}
+
+.google-login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.google-login-button i {
+    font-size: 18px;
+}
+
+.google-login-button:hover {
+    color: #ffffff;
+    background-color: #001e32;
+    border-color: #001e32;
+    box-shadow: #0084ff 0px 5px 15px;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-footer a {
+    position: relative;
+    color: #0084ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1.5px;
+    background-color: #001e32;
+    transition: width 0.3s ease;
+}
+
+.login-footer a:hover {
+    color: #001e32;
+}
+
+.login-footer a:hover::after {
+    width: 100%;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 12px;
+    margin-top: 2px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.password-wrapper i:hover {
+    color: #0084ff;
+}
+
+.forgot-password {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.forgot-password a {
+    position: relative;
+    color: #0084ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1.5px;
+    background-color: #001e32;
+    transition: width 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #001e32;
+}
+
+.forgot-password a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        background-color: #00111d;
+        margin: 50px 0 60px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login-card p {
+        color: #ffffff;
+    }
+
+    .login-form label {
+        color: #ffffff;
+    }
+
+    .login-footer a::after {
+        background-color: #ffffff;
+    }
+    .login-footer a:hover {
+        color: #ffffff;
+    }
+    .forgot-password a::after {
+        background-color: #ffffff;
+    }
+    .forgot-password a:hover {
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-card h1 {
+        font-size: 1.5rem;
+    }
+}

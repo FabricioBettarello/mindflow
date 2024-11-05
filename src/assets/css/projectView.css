@@ -1,0 +1,177 @@
+.project-view {
+    color: #d1d5db;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.project-view h2 {
+    font-size: 2.5rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #ffffff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.editor-toolbar {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: #001e32;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.editor-toolbar button {
+    background-color: transparent;
+    color: #d1d5db;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.editor-toolbar button:hover {
+    color: #0084ff;
+}
+
+.editor-toolbar button:focus {
+    outline: 2px solid #0084ff;
+}
+
+.editor-container {
+    padding: 1.5rem;
+    background-color: #001e32;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #ffffff;
+    min-height: 400px;
+    width: 100%;
+    max-width: 700px;
+    transition: border 0.3s ease;
+    border: 1px solid #0084ff;
+    cursor: text;
+}
+
+.public-DraftEditorPlaceholder-root {
+    color: #6b7280;
+    font-style: italic;
+}
+
+.public-DraftStyleDefault-block {
+    margin: 0.75rem 0;
+}
+
+.public-DraftStyleDefault-ltr {
+    color: #d1d5db;
+}
+
+.public-DraftStyleDefault-pre,
+.DraftEditor-editorContainer .code-block {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e293b;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #d1d5db;
+    overflow-x: auto;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0f18;
+}
+
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.project-view input[type="text"] {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #d1d5db;
+    background-color: transparent;
+    border: 1px solid #0084ff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.25rem;
+    width: 100%;
+    max-width: 700px;
+    -webkit-text-fill-color: #d1d5db;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.project-view input[type="text"]::placeholder {
+    color: #6b7280;
+    font-style: italic;
+}
+
+.project-view input[type="text"]:focus {
+    border: 1px solid #0084ff;
+    background-color: #001e32;
+}
+
+@media (max-width: 768px) {
+    .project-view h2 {
+        font-size: 2rem;
+    }
+
+    .editor-toolbar {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .editor-toolbar button {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+
+    .editor-container {
+        padding: 1rem;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-view h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .editor-toolbar {
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    .editor-toolbar button {
+        font-size: 0.875rem;
+        padding: 0.35rem;
+    }
+
+    .editor-container {
+        padding: 0.75rem;
+        min-height: 250px;
+    }
+
+    .error-message {
+        font-size: 1.25rem;
+    }
+}
